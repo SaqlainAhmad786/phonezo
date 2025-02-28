@@ -347,10 +347,22 @@ header #mainmenu li li a:hover {
 }
 
 div#logo img {
-  max-width: 74px;
+  max-width: 70px;
   position: relative;
   top: 16px;
   left: 8px;
+}
+
+/* @media screen (min-width: 991px) {
+  div#logo img {
+    top: 0px;
+  }
+} */
+
+@media screen and (max-width: 991px) {
+  div#logo img {
+    top: 0;
+  }
 }
 
 header.smaller div#logo .logo-1 {
@@ -12715,7 +12727,7 @@ img {
 
   .header-col-mid #mainmenu {
     position: absolute;
-    top: 90px;
+    top: 140px;
     width: 100%;
     padding: 0 0 0 0;
     left: 20px;
@@ -13549,6 +13561,10 @@ img {
     /* -------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+  
+  .header-col-mid #mainmenu {
+    top:104px;
+  }
 
   header .logo-main {
     display: none;

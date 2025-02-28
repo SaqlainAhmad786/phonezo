@@ -13274,7 +13274,7 @@ img {
   }
 
   #subheader {
-    padding: 40px 0 80px 0 !important;
+    padding: 70px 0 80px 0 !important;
   }
 
   #testimonial-carousel .de_testi {
@@ -13561,9 +13561,9 @@ img {
     /* -------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
-  
+
   .header-col-mid #mainmenu {
-    top:104px;
+    top: 104px;
   }
 
   header .logo-main {
@@ -13978,5 +13978,56 @@ img {
     left: 50%;
     margin-left: auto;
     width: auto;
+  }
+}
+
+.widgets {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 99999;
+}
+
+.widgets a {
+  font-size: 22px;
+  padding: 10px 13px;
+  border-radius: 100vh;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.widgets a i {
+  animation: shake 1s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .widgets {
+    display: flex;
   }
 }

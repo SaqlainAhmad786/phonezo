@@ -14035,3 +14035,13 @@ img {
     display: flex;
   }
 }
+
+
+.buttonHover {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--secondary-color) !important;
+    background-color: black;
+  }
+}

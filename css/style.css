@@ -13997,6 +13997,10 @@ img {
   border-radius: 100vh;
   color: white;
   background-color: var(--secondary-color);
+
+  &:hover {
+    color: white !important;
+  }
 }
 
 .widgets a i {
